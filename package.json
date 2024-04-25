@@ -1,5 +1,5 @@
 {
-  "name": "react-native-version",
+  "name": "react-native-version-ext",
   "description": "Version your React Native or Expo app in a `npm version` fashion. ~extended~",
   "license": "MIT",
   "author": "Sandeep Vemula",
