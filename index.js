@@ -149,7 +149,13 @@ function version(program, projectPath) {
 
 	try {
 		resolveFrom(projPath, "react-native");
-		appPkg = require(path.join(projPath, "package.json"));
+		if(programOpts.patch) {
+			appPkg = {
+				version: programOpts.patch
+			};
+		} else {
+			appPkg = require(path.join(projPath, "package.json"));
+		}
 	} catch (err) {
 		if (err.message === "Cannot find module 'react-native'") {
 			log({
