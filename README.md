@@ -59,6 +59,7 @@ $ react-native-version
 <!-- START cli -->
 
     -V, --version                output the version number
+    -p, --patch [version]        Use a different version number other than from the package.json ~extended~
     -a, --amend                  Amend the previous commit. This is done automatically when react-native-version is run from the "version" or "postversion" npm script. Use "--never-amend" if you never want to amend. Also, if the previous commit is a valid npm-version commit, react-native-version will update the Git tag pointing to this commit.
     --skip-tag                   For use with "--amend", if you don't want to update Git tags. Use this option if you have git-tag-version set to false in your npm config or you use "--no-git-tag-version" during npm-version.
     -A, --never-amend            Never amend the previous commit.
@@ -167,7 +168,7 @@ version({
 
 Versions your app
 
-**Kind**: global function  
+**Kind**: global function
 **Returns**: <code>Promise.&lt;(string\|Error)&gt;</code> - A promise which resolves with the last commit hash
 
 | Param       | Type                | Description                             |
@@ -181,7 +182,7 @@ Versions your app
 
 Custom type definition for Promises
 
-**Kind**: global typedef  
+**Kind**: global typedef
 **Properties**
 
 | Name   | Type               | Description                                                        |

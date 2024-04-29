@@ -12,7 +12,7 @@ program
 	.description(pkg.description)
 	.arguments("[projectPath]")
 	.option("-p, --patch [version]",
-		"Use a different version number other than from the package.json")
+		"Use a different version number other than from the package.json ~extended~")
 	.option(
 		"-a, --amend",
 		`Amend the previous commit. This is done automatically when ${pkg.name} is run from the "version" or "postversion" npm script. Use "--never-amend" if you never want to amend. Also, if the previous commit is a valid npm-version commit, ${pkg.name} will update the Git tag pointing to this commit.`
